@@ -1,11 +1,6 @@
 ﻿using GTA;
 using GTA.Math;
 using LemonUI.Menus;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace inxtrainer.submenus
 {
@@ -36,7 +31,7 @@ namespace inxtrainer.submenus
                 {
                     BlipColor c = blip.Color;
                     BlipSprite s = blip.Sprite;
-
+                    // https://github.com/MAFINS/MenyooSP/blob/b91068a18e6529f39bb881cd5303f20f562102e7/Solution/source/Submenus/Teleport/TeleMethods.cpp
                     if (
                         (s == BlipSprite.CrateDrop) ||
                         (c == BlipColor.Yellow && s == BlipSprite.Standard) ||
