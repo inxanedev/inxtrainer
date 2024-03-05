@@ -67,7 +67,7 @@ public class InxTrainer : Script
     {
         Pool.Process();
 
-        if (NeverWanted && Game.Player.WantedLevel != 0)
+        if (NeverWanted)
         {
             Game.Player.WantedLevel = 0;
         }
