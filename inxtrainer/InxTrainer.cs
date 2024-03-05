@@ -30,7 +30,6 @@ public class InxTrainer : Script
     public InxTrainer()
     {
         Tick += OnTick;
-        KeyDown += OnKeyDown;
         KeyUp += OnKeyUp;
 
         WantedLevel wantedLevelItem = new WantedLevel("Wanted level", "Set your wanted level");
@@ -85,10 +84,5 @@ public class InxTrainer : Script
         {
             menu.Visible = true;
         }
-    }
-
-    private void OnKeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
-    {
-        
     }
 }
